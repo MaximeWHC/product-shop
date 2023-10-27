@@ -15,16 +15,16 @@
             </div>
             <div class="flex-c flex-jc-sb flex-ai-l" style="height: 160px; text-align: left">
                 <div>
-                    <span>书名：</span><span>{{ Name }}</span>
+                    <span>Nom du livre: </span><span>{{ Name }}</span>
                 </div>
                 <div>
-                    <span>作者：</span><span>{{ Auth }}</span>
+                    <span>Auteur: </span><span>{{ Auth }}</span>
                 </div>
                 <div>
-                    <span>价格：</span><span class="c-red f-b">￥ {{ Price }}</span>
+                    <span>Prix: </span><span class="c-red f-b">{{ Price }} €</span>
                 </div>
                 <div>
-                    <span>库存：</span><span>{{ Numbers }}</span>
+                    <span>Stock: </span><span>{{ Numbers }}</span>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@ export default {
     handleClose (done) {
       done()
     },
-    // 获取当前windows页面信息-实时修改【弹窗】的宽度
+    // Obtenir les informations sur la page de la fenêtre en cours - modifier la largeur de la fenêtre popup en temps réel.
     getwindowinfo () {
       this.sreenwidth = document.documentElement.clientWidth
       if (this.sreenwidth < 600) {
@@ -70,7 +70,7 @@ export default {
     }
   },
   created () {
-    window.addEventListener('resize', this.getwindowinfo) // 注册监听器-实时检测浏览器页面宽高
+    window.addEventListener('resize', this.getwindowinfo) // Register Listener - Détecter la largeur et la hauteur de la page du navigateur en temps réel
     this.getwindowinfo()
   }
 }

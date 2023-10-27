@@ -25,8 +25,8 @@
             </div>
             <div class="flex-r flex-jc-sb flex-ai-c">
                 <div>
-                    <span class="f-14 f-b c-red">￥{{ Price }}</span
-                    >&nbsp;&nbsp;<span class="c-gray cardbook-span">￥{{ Priceold }}</span>
+                    <span class="f-14 f-b c-red">{{ Price }} €</span
+                    >&nbsp;&nbsp;<span class="c-gray cardbook-span">{{ Priceold }} €</span>
                 </div>
                 <div class="shopping c-p">
                     <AddShopping :active="Active" v-on:join="joinEvent" v-on:nojoin="nojoinEvent" />
@@ -34,7 +34,7 @@
             </div>
         </div>
 
-        <!-- 加弹出框-显示详情 -->
+        
         <div>
             <Dialog :dialog="dialogVisible" :title="Name" v-on:handleClose="handleClose">
                 <template v-slot:content>
@@ -115,8 +115,8 @@ export default {
       Image: 'cardbooks-01.jpg',
       Name: '博物馆里的大语文',
       Auth: '曲现龙',
-      Price: '￥90.00',
-      Priceold: '￥128.00',
+      Price: '90.00 €',
+      Priceold: '128.00 €',
       Active: '0',
 
       dialogVisible: false

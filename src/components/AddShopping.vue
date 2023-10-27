@@ -2,7 +2,7 @@
 <template>
   <div @click="clickEvent(Active)">
       <div v-if="Active == '0'">
-          <el-tooltip content="加入购物车" placement="bottom">
+          <el-tooltip content="Ajouter au panier" placement="bottom">
               <el-button type="primary" icon="" size="small" round
                   ><el-icon size="14"><ShoppingCartFull /></el-icon
               ></el-button>
@@ -10,7 +10,7 @@
       </div>
       <div v-else>
           <el-button type="primary" size="small" round plain>
-              <span class="f-12">已加入</span>
+              <span class="f-12">Ajouté</span>
           </el-button>
       </div>
   </div>
@@ -31,7 +31,7 @@ export default {
   },
   data () {
     return {
-      Active: 0 // 0为加入状态 1已加入状态
+      Active: 0 // // 0 pour l'état d'adhésion  1 pour Etat joint
     }
   },
   methods: {

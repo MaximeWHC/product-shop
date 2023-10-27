@@ -7,14 +7,14 @@
                     <div class="p-20">
                         <SignIn v-if="modelactive == 'model-denglu'">
                             <template v-slot:cut>
-                                <div class="f-12"><span>没有账号？</span><span class="model-button-a"
-                                        @click="modelactive = 'model-zhuce'">立即注册</span></div>
+                                <div class="f-12"><span>Nouveau client ? </span><span class="model-button-a"
+                                        @click="modelactive = 'model-zhuce'">Commencer ici</span></div>
                             </template>
                         </SignIn>
                         <Register v-else v-on:success="successEvent">
                             <template v-slot:cut>
-                                <div class="f-12"><span>想起来了？</span><span class="model-button-a"
-                                        @click="modelactive = 'model-denglu'">直接登录</span></div>
+                                <div class="f-12"><span>Déjà client ? </span><span class="model-button-a"
+                                        @click="modelactive = 'model-denglu'">Identifiez-vous</span></div>
                             </template>
                         </Register>
                     </div>

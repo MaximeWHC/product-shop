@@ -29,7 +29,7 @@ export default {
     handleClose (done) {
       this.$emit('handleClose', done)
     },
-    // 获取当前windows页面信息-实时修改【弹窗】的宽度
+    // Obtenir les informations sur la page de la fenêtre en cours - modifier la largeur de la fenêtre popup en temps réel.
     getwindowinfo () {
       this.sreenwidth = document.documentElement.clientWidth
       if (this.sreenwidth < 600) {
@@ -40,7 +40,7 @@ export default {
     }
   },
   created () {
-    window.addEventListener('resize', this.getwindowinfo) // 注册监听器-实时检测浏览器页面宽高
+    window.addEventListener('resize', this.getwindowinfo)
     this.getwindowinfo()
   }
 }

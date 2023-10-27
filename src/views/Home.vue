@@ -51,7 +51,7 @@ export default {
       const search = this.books.filter(n => n.name == data)
       if (!search[0]) {
         ElMessage({
-          message: '未找到相关书籍！',
+          message: 'Aucun livre connexe trouvé !',
           type: 'warning',
           offset: 80
         })

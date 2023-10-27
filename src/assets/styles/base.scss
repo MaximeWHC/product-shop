@@ -86,7 +86,7 @@ body {
     flex-wrap: wrap;
 }
 
-// flex布局
+// flex
 $flex: ( r: 'row', c: 'column', rr: 'row-reverse', cr: 'column-reverse');
 @each $key,
 $value in $flex {
@@ -110,7 +110,7 @@ $value in $jc {
     }
 }
 
-// 设置字体
+// ecriture
 $i: 12;
 @while $i<=32 {
     .f-#{$i} {
@@ -160,7 +160,7 @@ $value in $position {
     border: 1px solid #eee;
 }
 
-// width height 百分比
+// width height
 $i: 5;
 @while $i<=100 {
     .w-#{$i} {

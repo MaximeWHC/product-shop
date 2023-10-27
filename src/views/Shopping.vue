@@ -8,12 +8,12 @@
     <div style="padding: 0 10%">
         <div class="bg-white p-20" style="text-align: left; min-height: 80vh">
             <div class="m-b-20">
-                <span>购物车</span>
+                <span><h3>Panier</h3></span>
             </div>
             <el-table :data="shopbooks" border style="width: 100%" :header-cell-style="{ background: '#F5F7FA', color: '#666' }" @selection-change="handleSelectionChange">
                 <el-table-column type="selection" width="55" />
-                <el-table-column type="index" label="序号" width="80" />
-                <el-table-column prop="image" label="书籍" width="140">
+                <el-table-column type="index" label="Nombre d'ordre" width="80" />
+                <el-table-column prop="image" label="Livres" width="140">
                     <template #default="scope">
                         <div>
                             <el-image
@@ -28,41 +28,41 @@
                         </div>
                     </template>
                 </el-table-column>
-                <el-table-column prop="shopinfo" label="书籍简介" width="180">
+                <el-table-column prop="shopinfo" label="Information du livre" width="180">
                     <template #default="scope">
                         <div>
                             <div>
-                                <span>书名：</span><span>{{ scope.row.name }}</span>
+                                <span>Nom du livre:</span><span>{{ scope.row.name }}</span>
                             </div>
                             <div>
-                                <span>作者：</span><span>{{ scope.row.auth }}</span>
+                                <span>Auteur:</span><span>{{ scope.row.auth }}</span>
                             </div>
                         </div>
                     </template>
                 </el-table-column>
-                <el-table-column prop="price" label="单价" min-width="120">
+                <el-table-column prop="price" label="Prix" min-width="120">
                     <template #default="scope">
                         <div>
-                            <span>￥{{ scope.row.price }}</span>
+                            <span>{{ scope.row.price }} €</span>
                         </div>
                     </template>
                 </el-table-column>
-                <el-table-column prop="num" label="数量" min-width="180">
+                <el-table-column prop="num" label="Quantité" min-width="180">
                     <template #default="scope">
                         <div>
                             <el-input-number v-model="scope.row.num" size="large" :min="1" @change="(data) => handleChange(data, scope.row)" style="width: 100%" />
                         </div>
                     </template>
                 </el-table-column>
-                <el-table-column prop="sum" label="小计" min-width="120">
+                <el-table-column prop="sum" label="Total" min-width="120">
                     <template #default="scope">
-                        <div>￥{{ parseFloat((parseInt(scope.row.price * 100) / 100) * scope.row.num).toFixed(2) }}</div>
+                        <div>{{ parseFloat((parseInt(scope.row.price * 100) / 100) * scope.row.num).toFixed(2) }} €</div>
                     </template>
                 </el-table-column>
-                <el-table-column prop="caozuo" label="操作" min-width="140">
+                <el-table-column prop="caozuo" label="Opération" min-width="140">
                     <template #default="scope">
                         <div>
-                            <el-button type="primary" @click="shopInfoEvent(scope.row)">详情</el-button>
+                            <el-button type="primary" @click="shopInfoEvent(scope.row)">Détails</el-button>
                             <el-button type="danger" icon="Delete" @click="delEvent(scope.$index)"></el-button>
                         </div>
                     </template>
@@ -70,16 +70,15 @@
             </el-table>
             <div class="w-100 flex-r flex-jc-r flex-ai-c m-t-20 end-sum">
                 <div class="c-gray">
-                    <span>已选择</span><span class="c-red">{{ number }}</span
-                    ><span>件商品</span>
+                    <span class="c-red">{{ number }}</span><span> article(s) </span><span>choisi</span>
                 </div>
                 <div>
-                    <span>合计：</span><span class="c-red f-b f-16">￥{{ money }}</span>
+                    <span>Montant total: </span><span class="c-red f-b f-16">{{ money }} €</span>
                 </div>
-                <div><el-button type="danger" size="large" style="width: 100px" :disabled="shopnum == 0">结算</el-button></div>
+                <div><el-button type="danger" size="large" style="width: 100px" :disabled="shopnum == 0">Acheter</el-button></div>
             </div>
 
-            <!-- 加弹出框-显示详情 -->
+            
             <div>
                 <Dialog :dialog="dialogVisible" :title="taninfo.Name" v-on:handleClose="handleClose">
                     <template v-slot:content>

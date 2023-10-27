@@ -1,23 +1,23 @@
 /* eslint-disable no-console, no-alert */
 <template>
     <div class="c-white m-t-60">
-        <h1 class="m-40">注册</h1>
+        <h1 class="m-40">Inscription</h1>
         <div class="m-t-48 m-l-40 m-r-60">
             <el-form :model="form" ref="form" :rules="rules" label-width="50px" class="form-box">
-                <el-form-item label="账号" size="large" prop="name">
-                    <el-input v-model="form.name" size="large" maxlength="20" clearable placeholder="请输入账号/手机号/邮箱" />
+                <el-form-item label="Identifiant" size="large" prop="name">
+                    <el-input v-model="form.name" size="large" maxlength="20" clearable placeholder="téléphone / e-mail" />
                 </el-form-item>
-                <el-form-item label="密码" size="large" prop="pass">
-                    <el-input v-model="form.pass" size="large" maxlength="20" type="password" show-password clearable placeholder="请输入密码" />
+                <el-form-item label="MDP" size="large" prop="pass">
+                    <el-input v-model="form.pass" size="large" maxlength="20" type="password" show-password clearable placeholder="votre mot de passe" />
                 </el-form-item>
-                <el-form-item label="确认" size="large" prop="ck_pass">
-                    <el-input v-model="form.ck_pass" size="large" maxlength="20" type="password" show-password clearable placeholder="请确认密码" />
+                <el-form-item label="Confirmer" size="large" prop="ck_pass">
+                    <el-input v-model="form.ck_pass" size="large" maxlength="20" type="password" show-password clearable placeholder="confirmer le mot de passe" />
                 </el-form-item>
                 <el-form-item>
                     <slot name="cut"></slot>
                 </el-form-item>
                 <el-form-item>
-                    <el-button type="warning" size="large" style="width: 100%" @click="onSubmit('form')">注册</el-button>
+                    <el-button type="warning" size="large" style="width: 100%" @click="onSubmit('form')">S'inscrire</el-button>
                 </el-form-item>
             </el-form>
         </div>
@@ -40,14 +40,14 @@ export default {
         name: [
           {
             required: true,
-            message: '账号不能为空',
+            message: 'Identifiant ne peut pas être vide',
             trigger: 'change'
           }
         ],
         pass: [
           {
             required: true,
-            message: '密码不能为空',
+            message: 'Le mot de passe ne peut pas être vide',
             trigger: 'change'
           }
         ],
@@ -64,9 +64,9 @@ export default {
   methods: {
     validatePass2 (rule, value, callback) {
       if (value === '') {
-        callback(new Error('确认密码不能为空'))
+        callback(new Error('Confirmer que le mot de passe ne peut pas être vide'))
       } else if (value !== this.form.pass) {
-        callback(new Error('2次输入的密码不同！请重新输入'))
+        callback(new Error('Les mots de passe saisis deux fois sont différents ! Veuillez réessayer'))
       } else {
         callback()
       }
@@ -75,7 +75,7 @@ export default {
       this.$refs[formName].validate((valid) => {
         if (valid) {
           ElMessage({
-            message: '注册成功！',
+            message: 'Inscription réussie !',
             type: 'success',
             duration: 1000,
             onClose: () => {

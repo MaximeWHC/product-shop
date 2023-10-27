@@ -8,7 +8,7 @@
                 </div>
                 <div class="flex-r flex-jc-sb flex-ai-c input-box">
                     <div style="width: calc(100% - 70px);">
-                        <el-input v-model="value" placeholder="请输入书籍名称" size="large" prefix-icon="Search" maxlength="30"
+                        <el-input v-model="value" placeholder="Veuillez indiquer le nom du livre" size="large" prefix-icon="Search" maxlength="30"
                             clearable />
                     </div>
                     <div class="w-px-60">
@@ -30,7 +30,7 @@ export default {
   name: 'Carousel',
   data () {
     return {
-      tips: '旧书不厌百回读，熟读精思子自知',
+      tips: 'Chacun sa passion, chacun son livre',
       value: '',
       items: ['三体', '狂飙', '流浪地球', '阿甘正传', '神圣婚姻', '浪漫地理学']
     }

@@ -1,6 +1,0 @@
-/* eslint-disable no-console, no-alert */
-<template>
-    <div class="about">
-      <h1>This is an about page</h1>
-    </div>
-  </template>

@@ -20,7 +20,7 @@ export default {
   data () {
     return {
       activeName: 0,
-      tabs: ['全部分类', '历史', '心理学', '哲学', '亲子', '古典', '法律', '摄影', '文艺', '传记', '儿童', '网络', '建筑', '金融', '股票', '投资理财']
+      tabs: ['Toutes les catégories', 'Histoire', 'Psychologie', 'Philosophie', 'Parentalité', 'Classique', 'Droit', 'Photographie', 'Littérature', 'Biographie', 'Enfants', 'Internet', 'Architecture', 'Finance', 'Actions', 'Investissements']
     }
   }
 }

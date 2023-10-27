@@ -12,17 +12,17 @@
                 active-text-color="#ffd04b"
                 @select="handleSelect"
             >
-                <el-menu-item>晓文书店</el-menu-item>
+                <el-menu-item><strong>Emazon</strong></el-menu-item>
                 <div style="flex-grow: 1" />
-                <el-menu-item index="/home">书籍</el-menu-item>
+                <el-menu-item index="/home">Livres</el-menu-item>
                 <el-menu-item index="/shopping">
-                    购物车 <span class="shopcar-num">{{ shopnum }}</span>
+                    Panier <span class="shopcar-num">{{ shopnum }}</span>
                 </el-menu-item>
+                <el-menu-item index="/contact">Contact</el-menu-item>
                 <el-sub-menu>
                     <template #title>admin</template>
                     <el-menu-item index="/">
-                        <el-icon> <SwitchButton /> </el-icon>退出登录</el-menu-item
-                    >
+                        <el-icon> <SwitchButton /> </el-icon>Se déconnecter</el-menu-item>
                 </el-sub-menu>
             </el-menu>
         </div>

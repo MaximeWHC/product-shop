@@ -236,7 +236,7 @@
         "price": "21",
         "priceold": "60",
         "active": "0",
-        "category": ["Internet", "Informatique"]
+        "category": "Informatique"
     },
     {
         "id": "25",
@@ -297,5 +297,245 @@
         "priceold": "50",
         "active": "0",
         "category": "Suspense"
+    },
+    {
+        "id": "31",
+        "image": "cardbooks-31.png",
+        "name": "Pas un cri",
+        "auth": "Hood",
+        "price": "23",
+        "priceold": "60",
+        "active": "0",
+        "category": "Suspense"
+    },
+    {
+        "id": "32",
+        "image": "cardbooks-32.png",
+        "name": "La Fille de Nulle Part",
+        "auth": "Daniel",
+        "price": "25",
+        "priceold": "60",
+        "active": "0",
+        "category": "Suspense"
+    },
+    {
+        "id": "33",
+        "image": "cardbooks-33.png",
+        "name": "Toxique",
+        "auth": "Cole",
+        "price": "23",
+        "priceold": "60",
+        "active": "0",
+        "category": "Suspense"
+    },
+    {
+        "id": "34",
+        "image": "cardbooks-34.png",
+        "name": "Natation",
+        "auth": "Sun",
+        "price": "25",
+        "priceold": "60",
+        "active": "0",
+        "category": "Sport"
+    },
+    {
+        "id": "35",
+        "image": "cardbooks-35.png",
+        "name": "Fitness",
+        "auth": "Stock",
+        "price": "22",
+        "priceold": "60",
+        "active": "0",
+        "category": "Sport"
+    },
+    {
+        "id": "36",
+        "image": "cardbooks-36.png",
+        "name": "One Piece",
+        "auth": "Oda Eiichirō",
+        "price": "25",
+        "priceold": "50",
+        "active": "0",
+        "category": "Anime"
+    },
+    {
+        "id": "37",
+        "image": "cardbooks-37.png",
+        "name": "EVA",
+        "auth": "Anno Hideaki",
+        "price": "24",
+        "priceold": "60",
+        "active": "0",
+        "category": "Anime"
+    },
+    {
+        "id": "38",
+        "image": "cardbooks-38.png",
+        "name": "Kimetsu no Yaiba",
+        "auth": "Gotōge Koyoharu",
+        "price": "27",
+        "priceold": "40",
+        "active": "0",
+        "category": "Anime"
+    },
+    {
+        "id": "39",
+        "image": "cardbooks-39.png",
+        "name": "Doraemon",
+        "auth": "Fujimoto Hiroshi",
+        "price": "28",
+        "priceold": "60",
+        "active": "0",
+        "category": "Anime"
+    },
+    {
+        "id": "40",
+        "image": "cardbooks-40.png",
+        "name": "Droit d'asile",
+        "auth": "Macron",
+        "price": "24",
+        "priceold": "60",
+        "active": "0",
+        "category": "Droit"
+    },
+    {
+        "id": "41",
+        "image": "cardbooks-41.png",
+        "name": "La protection sociale",
+        "auth": "Zoé",
+        "price": "25",
+        "priceold": "60",
+        "active": "0",
+        "category": "Droit"
+    },
+    {
+        "id": "42",
+        "image": "cardbooks-42.png",
+        "name": "Défie-moi",
+        "auth": "Laetitia",
+        "price": "25",
+        "priceold": "60",
+        "active": "0",
+        "category": "Art"
+    },
+    {
+        "id": "43",
+        "image": "cardbooks-43.png",
+        "name": "Et je t'aimerai encore",
+        "auth": "Claire",
+        "price": "19",
+        "priceold": "60",
+        "active": "0",
+        "category": "Art"
+    },
+    {
+        "id": "44",
+        "image": "cardbooks-44.png",
+        "name": "Cyrano de Bergerac",
+        "auth": "Edmond",
+        "price": "28",
+        "priceold": "60",
+        "active": "0",
+        "category": "Art"
+    },
+    {
+        "id": "45",
+        "image": "cardbooks-45.png",
+        "name": "Chine",
+        "auth": "WANG",
+        "price": "25",
+        "priceold": "60",
+        "active": "0",
+        "category": "Voyage"
+    },
+    {
+        "id": "46",
+        "image": "cardbooks-46.png",
+        "name": "Paris",
+        "auth": "Charles",
+        "price": "29",
+        "priceold": "60",
+        "active": "0",
+        "category": "Voyage"
+    },
+    {
+        "id": "47",
+        "image": "cardbooks-47.png",
+        "name": "C++",
+        "auth": "Jobs",
+        "price": "26",
+        "priceold": "60",
+        "active": "0",
+        "category": "Internet"
+    },
+    {
+        "id": "48",
+        "image": "cardbooks-48.png",
+        "name": "Python",
+        "auth": "Snake",
+        "price": "25",
+        "priceold": "60",
+        "active": "0",
+        "category": ["Internet", "Informatique"]
+    },
+    {
+        "id": "49",
+        "image": "cardbooks-49.png",
+        "name": "Computer Architecture",
+        "auth": "Sam",
+        "price": "28",
+        "priceold": "60",
+        "active": "0",
+        "category": ["Internet", "Informatique"]
+    },
+    {
+        "id": "50",
+        "image": "cardbooks-50.png",
+        "name": "Les Nouveaux Entrepreneurs",
+        "auth": "Henry",
+        "price": "18",
+        "priceold": "54",
+        "active": "0",
+        "category": "Investissements"
+    },
+    {
+        "id": "51",
+        "image": "cardbooks-51.png",
+        "name": "Eden",
+        "auth": "Thomas",
+        "price": "30",
+        "priceold": "68",
+        "active": "0",
+        "category": ["Investissements","Actions"]
+    },
+    {
+        "id": "52",
+        "image": "cardbooks-52.png",
+        "name": "Dream Team",
+        "auth": "Ludovic",
+        "price": "25",
+        "priceold": "50",
+        "active": "0",
+        "category": ["Finance", "Investissements"]
+    },
+    {
+        "id": "53",
+        "image": "cardbooks-53.png",
+        "name": "Le régime",
+        "auth": "Anna",
+        "price": "22",
+        "priceold": "30",
+        "active": "0",
+        "category": "Cuisine"
+    },
+    {
+        "id": "54",
+        "image": "cardbooks-54.png",
+        "name": "Cupcakes & Muffins",
+        "auth": "Mia",
+        "price": "23",
+        "priceold": "40",
+        "active": "0",
+        "category": "Cuisine"
     }
 ]

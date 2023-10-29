@@ -16,7 +16,7 @@
         <el-form
           ref="contactForm"
           @submit.prevent="handleSubmit"
-          model="contactForm"
+          :model="contactForm"
           :rules="rules"
         >
           <el-form-item label="Prénom" prop="firstName">
@@ -39,17 +39,26 @@
           </el-form-item>
           <el-form-item class="submit-button">
             <div class="centered">
-            <el-button type="primary" size="large">Envoyer</el-button>
-          </div>
+              <el-button type="primary" size="large" @click="handleSubmit"
+                >Envoyer</el-button
+              >
+            </div>
           </el-form-item>
         </el-form>
 
         <div class="contact-info">
           <p class="info-title">Nos informations:</p>
-          <p><strong>Téléphone:</strong>+33 7 84 96 60 10 / +33 7 50 60 47 50</p>
-          <p><strong>Adresse:</strong>30-32 Av. de la République, 94800 Villejuif, France</p>
-          <p><strong>Email:</strong>haicheng.wang@efrei.net / zongrui.xue@efrei.net / zhongtian.fan@efrei.net</p>
-          
+          <p>
+            <strong>Téléphone:</strong>+33 7 51 76 50 10 / +33 7 50 60 47 50
+          </p>
+          <p>
+            <strong>Adresse:</strong>30-32 Av. de la République, 94800
+            Villejuif, France
+          </p>
+          <p>
+            <strong>Email:</strong>haicheng.wang@efrei.net /
+            zongrui.xue@efrei.net / zhongtian.fan@efrei.net
+          </p>
         </div>
       </div>
     </div>
@@ -61,6 +70,8 @@
 </template>
 
 <script>
+import { ElMessage } from "element-plus";
+
 export default {
   name: "Contact",
   data() {
@@ -124,6 +135,45 @@ export default {
       },
     };
   },
+  methods: {
+    async handleSubmit() {
+      try {
+        const valid = await this.$refs.contactForm.validate();
+        if (valid) {
+          // 使用ElMessage显示成功消息
+          ElMessage({
+            message: "Votre message a été envoyé avec succès!",
+            type: "success",
+          });
+          this.resetContactForm();
+        } else {
+          // 使用ElMessage显示错误消息
+          ElMessage({
+            message: "Veuillez compléter le formulaire correctement!",
+            type: "error",
+          });
+          return false;
+        }
+      } catch (error) {
+        console.error("Error in handleSubmit:", error);
+        ElMessage({
+          message:
+            "Une erreur est survenue lors de la soumission du formulaire.",
+          type: "error",
+        });
+      }
+    },
+    resetContactForm() {
+      this.contactForm = {
+        firstName: "",
+        lastName: "",
+        address: "",
+        phone: "",
+        email: "",
+        message: "",
+      };
+    },
+  },
 };
 </script>
 
@@ -139,8 +189,8 @@ body {
   color: #ffffff;
 }
 .submit-button .centered {
-    text-align: center; // This will center the button within the form item
-    width: 100%;
+  text-align: center; // This will center the button within the form item
+  width: 100%;
 }
 
 .contact-info {

@@ -48,13 +48,13 @@
             @click="onSubmitMicrosoft"
             >Continuer avec Microsoft</el-button
           ><br /><br />
-          <el-button
+          <!--<el-button
             type="warning"
             size="large"
             style="width: 100%"
             @click="onSubmitGoogle"
             >Continuer avec Google</el-button
-          ><div v-if="user">
+          >--><div v-if="user">
         <p>Bonjour, {{ user.name }}</p>
       </div>
         </el-form-item>

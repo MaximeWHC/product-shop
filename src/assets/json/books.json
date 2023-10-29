@@ -46,7 +46,7 @@
         "price": "17",
         "priceold": "50",
         "active": "0",
-        "category": "Psychologie"
+        "category": ["Suspense", "Biographie"]
     },
     {
         "id": "6",
@@ -66,7 +66,7 @@
         "price": "25",
         "priceold": "60",
         "active": "0",
-        "category": "Histoire, Littérature"
+        "category": ["Histoire", "Littérature"]
     },
     {
         "id": "8",
@@ -76,7 +76,7 @@
         "price": "24",
         "priceold": "50",
         "active": "0",
-        "category": "Histoire, Littérature"
+        "category": ["Histoire", "Littérature"]
     },
     {
         "id": "9",
@@ -86,7 +86,7 @@
         "price": "24",
         "priceold": "60",
         "active": "0",
-        "category": "Histoire, Littérature"
+        "category": ["Histoire", "Littérature"]
     },
     {
         "id": "10",
@@ -96,7 +96,7 @@
         "price": "26",
         "priceold": "60",
         "active": "0",
-        "category": "Histoire, Littérature"
+        "category": ["Histoire", "Littérature"]
     },
     {
         "id": "11",
@@ -116,7 +116,7 @@
         "price": "25",
         "priceold": "60",
         "active": "0",
-        "category": "Histoire, Littérature"
+        "category": ["Histoire", "Littérature"]
     },
     {
         "id": "13",
@@ -186,7 +186,7 @@
         "price": "24",
         "priceold": "60",
         "active": "0",
-        "category": "Finance, Actions, Investissements"
+        "category": ["Actions", "Investissements"]
     },
     {
         "id": "20",
@@ -196,7 +196,7 @@
         "price": "20",
         "priceold": "60",
         "active": "0",
-        "category": "Finance, Actions, Investissements"
+        "category": ["Finance", "Actions", "Investissements", "Biographie"]
     },
     {
         "id": "21",
@@ -226,7 +226,7 @@
         "price": "22",
         "priceold": "60",
         "active": "0",
-        "category": "Internet, Informatique"
+        "category": ["Internet", "Informatique"]
     },
     {
         "id": "24",
@@ -236,6 +236,66 @@
         "price": "21",
         "priceold": "60",
         "active": "0",
-        "category": "Internet, Informatique"
+        "category": ["Internet", "Informatique"]
+    },
+    {
+        "id": "25",
+        "image": "cardbooks-25.png",
+        "name": "L'Offre à 100M $",
+        "auth": "Alex",
+        "price": "21",
+        "priceold": "60",
+        "active": "0",
+        "category": ["Actions", "Finance"]
+    },
+    {
+        "id": "26",
+        "image": "cardbooks-26.png",
+        "name": "Copywriting Facile",
+        "auth": "Mike",
+        "price": "24",
+        "priceold": "60",
+        "active": "0",
+        "category": ["Finance", "Investissements"]
+    },
+    {
+        "id": "27",
+        "image": "cardbooks-27.png",
+        "name": "Linux",
+        "auth": "Adam",
+        "price": "22",
+        "priceold": "60",
+        "active": "0",
+        "category": "Informatique"
+    },
+    {
+        "id": "28",
+        "image": "cardbooks-28.png",
+        "name": "Ton dernier regard",
+        "auth": "Amjid",
+        "price": "24",
+        "priceold": "60",
+        "active": "0",
+        "category": "Art"
+    },
+    {
+        "id": "29",
+        "image": "cardbooks-29.png",
+        "name": "À demain… un autre jour",
+        "auth": "Hélène",
+        "price": "21",
+        "priceold": "60",
+        "active": "0",
+        "category": "Art"
+    },
+    {
+        "id": "30",
+        "image": "cardbooks-30.png",
+        "name": "L'Intrus",
+        "auth": "Steve",
+        "price": "25",
+        "priceold": "50",
+        "active": "0",
+        "category": "Suspense"
     }
 ]

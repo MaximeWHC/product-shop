@@ -70,7 +70,7 @@
             </el-table>
             <div class="w-100 flex-r flex-jc-r flex-ai-c m-t-20 end-sum">
                 <div class="c-gray">
-                    <span class="c-red">{{ number }}</span><span> article(s) </span><span>choisi</span>
+                    <span class="c-red">{{ number }}</span><span> article(s) </span><span>choisi(s)</span>
                 </div>
                 <div>
                     <span>Montant total: </span><span class="c-red f-b f-16">{{ money }} €</span>

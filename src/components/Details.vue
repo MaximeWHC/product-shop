@@ -13,7 +13,7 @@
                     close-on-press-escape
                 />
             </div>
-            <div class="flex-c flex-jc-sb flex-ai-l" style="height: 160px; text-align: left">
+            <div class="flex-c flex-jc-sb flex-ai-l" style="height: 160px; text-align: left; margin-left: 20px" >
                 <div>
                     <span>Nom du livre: </span><span>{{ Name }}</span>
                 </div>

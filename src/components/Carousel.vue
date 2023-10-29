@@ -32,7 +32,7 @@ export default {
     return {
       tips: 'Chacun sa passion, chacun son livre',
       value: '',
-      items: ['三体', '狂飙', '流浪地球', '阿甘正传', '神圣婚姻', '浪漫地理学']
+      items: ['三体', '狂飙', '流浪地球', '阿甘正传', '三国演义', '资治通鉴']
     }
   },
   methods: {

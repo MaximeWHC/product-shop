@@ -39,7 +39,7 @@
             <Dialog :dialog="dialogVisible" :title="Name" v-on:handleClose="handleClose">
                 <template v-slot:content>
                     <div>
-                        <Details :image="Image" :name="Name" :auth="Auth" :price="Price" :number="'20'" />
+                        <Details :image="Image" :name="Name" :auth="Auth" :price="Price" :number="'150'" />
                     </div>
                 </template>
             </Dialog>
@@ -115,8 +115,8 @@ export default {
       Image: 'cardbooks-01.jpg',
       Name: '博物馆里的大语文',
       Auth: '曲现龙',
-      Price: '90.00 €',
-      Priceold: '128.00 €',
+      Price: '15 €',
+      Priceold: '45 €',
       Active: '0',
 
       dialogVisible: false

@@ -3,44 +3,239 @@
         "image": "cardbooks-01.jpg",
         "name": "博物馆里的大语文",
         "auth": "曲现龙",
-        "price": "90.23",
-        "priceold": "128.43",
-        "active": "0"
+        "price": "15",
+        "priceold": "45",
+        "active": "0",
+        "category": "Littérature"
     },
     {
         "id": "2",
         "image": "cardbooks-02.jpg",
         "name": "三体",
         "auth": "刘慈欣",
-        "price": "901.23",
-        "priceold": "1281.44",
-        "active": "0"
+        "price": "16",
+        "priceold": "50",
+        "active": "0",
+        "category": "Littérature"
     },
     {
         "id": "3",
         "image": "cardbooks-03.jpg",
         "name": "阿甘正传",
         "auth": "温斯顿·葛鲁姆",
-        "price": "902.02",
-        "priceold": "1282.01",
-        "active": "0"
+        "price": "15",
+        "priceold": "40",
+        "active": "0",
+        "category": "Littérature"
     },
     {
         "id": "4",
         "image": "cardbooks-04.jpg",
         "name": "流浪地球",
         "auth": "刘慈欣",
-        "price": "903.00",
-        "priceold": "1283.00",
-        "active": "0"
+        "price": "20",
+        "priceold": "60",
+        "active": "0",
+        "category": "Littérature"
     },
     {
         "id": "5",
         "image": "cardbooks-05.png",
         "name": "狂飙",
         "auth": "白文君(改编)",
-        "price": "904.00",
-        "priceold": "1284.00",
-        "active": "0"
+        "price": "17",
+        "priceold": "50",
+        "active": "0",
+        "category": "Psychologie"
+    },
+    {
+        "id": "6",
+        "image": "cardbooks-06.png",
+        "name": "Basketball",
+        "auth": "Jordan",
+        "price": "24",
+        "priceold": "60",
+        "active": "0",
+        "category": "Sport"
+    }, 
+    {
+        "id": "7",
+        "image": "cardbooks-07.jpg",
+        "name": "三国演义",
+        "auth": "罗贯中",
+        "price": "25",
+        "priceold": "60",
+        "active": "0",
+        "category": "Histoire, Littérature"
+    },
+    {
+        "id": "8",
+        "image": "cardbooks-08.jpg",
+        "name": "水浒传",
+        "auth": "施耐庵",
+        "price": "24",
+        "priceold": "50",
+        "active": "0",
+        "category": "Histoire, Littérature"
+    },
+    {
+        "id": "9",
+        "image": "cardbooks-09.jpg",
+        "name": "西游记",
+        "auth": "吴承恩",
+        "price": "24",
+        "priceold": "60",
+        "active": "0",
+        "category": "Histoire, Littérature"
+    },
+    {
+        "id": "10",
+        "image": "cardbooks-10.jpg",
+        "name": "红楼梦",
+        "auth": "曹雪芹",
+        "price": "26",
+        "priceold": "60",
+        "active": "0",
+        "category": "Histoire, Littérature"
+    },
+    {
+        "id": "11",
+        "image": "cardbooks-11.png",
+        "name": "Football",
+        "auth": "Messi",
+        "price": "25",
+        "priceold": "60",
+        "active": "0",
+        "category": "Sport"
+    },
+    {
+        "id": "12",
+        "image": "cardbooks-12.png",
+        "name": "资治通鉴",
+        "auth": "司马光",
+        "price": "25",
+        "priceold": "60",
+        "active": "0",
+        "category": "Histoire, Littérature"
+    },
+    {
+        "id": "13",
+        "image": "cardbooks-13.png",
+        "name": "London",
+        "auth": "John",
+        "price": "21",
+        "priceold": "60",
+        "active": "0",
+        "category": "Voyage"
+    },
+    {
+        "id": "14",
+        "image": "cardbooks-14.png",
+        "name": "Berlin",
+        "auth": "Tom",
+        "price": "20",
+        "priceold": "60",
+        "active": "0",
+        "category": "Voyage"
+    },
+    {
+        "id": "15",
+        "image": "cardbooks-15.png",
+        "name": "Le piège américain",
+        "auth": "Jean",
+        "price": "25",
+        "priceold": "40",
+        "active": "0",
+        "category": "Droit"
+    },
+    {
+        "id": "16",
+        "image": "cardbooks-16.png",
+        "name": "Contrôle d'identité",
+        "auth": "Thomas",
+        "price": "24",
+        "priceold": "65",
+        "active": "0",
+        "category": "Droit"
+    },
+    {
+        "id": "17",
+        "image": "cardbooks-17.png",
+        "name": "300 recettes d'hiver",
+        "auth": "Iilian",
+        "price": "24",
+        "priceold": "60",
+        "active": "0",
+        "category": "Cuisine"
+    },
+    {
+        "id": "18",
+        "image": "cardbooks-18.png",
+        "name": "Bowls",
+        "auth": "Anne",
+        "price": "24",
+        "priceold": "60",
+        "active": "0",
+        "category": "Cuisine"
+    },
+    {
+        "id": "19",
+        "image": "cardbooks-19.png",
+        "name": "Le Colosse de Wall Street",
+        "auth": "Marine",
+        "price": "24",
+        "priceold": "60",
+        "active": "0",
+        "category": "Finance, Actions, Investissements"
+    },
+    {
+        "id": "20",
+        "image": "cardbooks-20.png",
+        "name": "Père riche père pauvre",
+        "auth": "Lee",
+        "price": "20",
+        "priceold": "60",
+        "active": "0",
+        "category": "Finance, Actions, Investissements"
+    },
+    {
+        "id": "21",
+        "image": "cardbooks-21.png",
+        "name": "Naruto",
+        "auth": "Kishimoto Masashi",
+        "price": "27",
+        "priceold": "50",
+        "active": "0",
+        "category": "Anime"
+    },
+    {
+        "id": "22",
+        "image": "cardbooks-22.png",
+        "name": "Bleach",
+        "auth": "Noriaki Kubo",
+        "price": "25",
+        "priceold": "60",
+        "active": "0",
+        "category": "Anime"
+    },
+    {
+        "id": "23",
+        "image": "cardbooks-23.png",
+        "name": "ChatGPT",
+        "auth": "Tito",
+        "price": "22",
+        "priceold": "60",
+        "active": "0",
+        "category": "Internet, Informatique"
+    },
+    {
+        "id": "24",
+        "image": "cardbooks-24.png",
+        "name": "MySQL",
+        "auth": "Youssef",
+        "price": "21",
+        "priceold": "60",
+        "active": "0",
+        "category": "Internet, Informatique"
     }
 ]

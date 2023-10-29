@@ -11,7 +11,7 @@
     <div>
         <Content>
             <template v-slot:content>
-                <div class="content-slot flex-r flex-jc-sb flex-ac-fs flex-col">
+               <div class="content-slot flex-r flex-jc-sb flex-ac-fs flex-col">
                     <div v-for="(item, index) in books" :key="index">
                         <CardBooks :id="item.id" :image="item.image" :name="item.name" :auth="item.auth" :price="item.price"
                             :priceold="item.priceold" :active="item.active" />

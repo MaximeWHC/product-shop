@@ -1,5 +1,7 @@
 # product-shop
-
+```
+Groupe IRV - Haicheng WANG, Zongrui XUE, Zhongtian FAN
+```
 ## Project setup
 ```
 npm install

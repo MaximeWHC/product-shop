@@ -9,13 +9,13 @@
         :label="cat"
         :name="cat"
         >
-        <div name="content" class="content-slot">
+        <div  class="content-slot">
             <div v-for="(item, index) in filterBooksByCategory(cat)" :key="index">
             <CardBooks :id="item.id" :image="item.image" :name="item.name" :auth="item.auth" :price="item.price"
                 :priceold="item.priceold" :active="item.active" />
         </div>
 
-            <slot ></slot>
+            <slot name="content" ></slot>
           </div>
         </el-tab-pane>
       </el-tabs>

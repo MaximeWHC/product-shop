@@ -83,7 +83,7 @@
                 <Dialog :dialog="dialogVisible" :title="taninfo.Name" v-on:handleClose="handleClose">
                     <template v-slot:content>
                         <div>
-                            <Details :image="taninfo.Image" :name="taninfo.Name" :auth="taninfo.Auth" :price="taninfo.Price" :number="'20'" />
+                            <Details :image="taninfo.Image" :name="taninfo.Name" :auth="taninfo.Auth" :price="taninfo.Price" :number="'150'" />
                         </div>
                     </template>
                 </Dialog>

@@ -17,9 +17,9 @@
                             :priceold="item.priceold" :active="item.active" />
                     </div>
                 </div>
-                <div class="w-100 flex-r flex-jc-c flex-ai-c m-t-20">
+                <!--<div class="w-100 flex-r flex-jc-c flex-ai-c m-t-20">
                     <Pagination :total="this.books.length" />
-                </div>
+                </div>-->
             </template>
         </Content>
     </div>

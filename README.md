@@ -1,6 +1,7 @@
 # product-shop
 ```
 Groupe IRV - Haicheng WANG, Zongrui XUE, Zhongtian FAN
+GitHub: https://github.com/MaximeWHC/product-shop
 ```
 ## Project setup
 ```
